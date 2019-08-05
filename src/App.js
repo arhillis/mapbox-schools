@@ -3,13 +3,22 @@ import './App.css';
 
 import Sidebar from './components/sidebar'
 
-function App() {
-  return (
-    <div className="App">
-      App goes here.
-      <Sidebar />
-    </div>
-  );
+class App extends React.Component{
+  constructor(){
+    super();
+    this.state = {
+      showSidebar: false
+    }
+  }
+  render() {
+    return (
+      <div className="App">
+        App goes here.
+        <Sidebar shown={this.state.showSidebar}/>
+      </div>
+    );
+  }
 }
+
 
 export default App;
