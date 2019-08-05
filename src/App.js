@@ -10,11 +10,20 @@ class App extends React.Component{
       showSidebar: false
     }
   }
+
+  toggleSidebar = () =>{
+    this.setState(prevState => {
+        return {showSidebar: !prevState.showSidebar}
+    })
+  }
+
   render() {
     return (
       <div className="App">
         App goes here.
-        <Sidebar shown={this.state.showSidebar}/>
+        <Sidebar showSidebar={this.state.showSidebar}
+          toggleSidebar={this.toggleSidebar}
+        />
       </div>
     );
   }

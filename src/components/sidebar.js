@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 
 class Sidebar extends Component {
-    constructor(){
-        super();
-        this.state = {}
+    constructor(props){
+        super(props);
+        this.toggleSidebar = props.toggleSidebar.bind(this)
     }
+    
     render() {
         return (
-            <div className="sidebar">
-                Sidebar goes here.
+            <div className={this.props.showSidebar ? "sidebar shown" : "sidebar hidden"}>
+                <button className="sidebar-btn"
+                        onClick={this.toggleSidebar}
+                >X</button>
             </div>
         );
     }
