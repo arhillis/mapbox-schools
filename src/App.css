@@ -1,3 +1,5 @@
+
+/* ************** SIDEBAR ************************ */
 .sidebar{
   background: darkblue;
   color: white;
@@ -40,4 +42,17 @@
 @keyframes slide-out{
   from {left: -240px}
   to {left: 0}
+}
+
+/* *********** MARKER LABEL *********************** */
+.marker-label{
+  color: darkslateblue;
+  font-weight: bold;
+  padding: 2px 4px;
+  font-size: 14px;
+}
+
+.marker-icon{
+  width: 20px;
+  height: 20px;
 }
