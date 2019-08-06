@@ -123,18 +123,6 @@
     },
     {
       "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          -94.085655,
-          33.48332
-        ],
-        "type": "Point"
-      },
-      "id": "703934380d29a4759e589a827cfa48f8"
-    },
-    {
-      "type": "Feature",
       "properties": {
         "campus": "Dunbar Early Education",
         "phone": "903-974-8113",
