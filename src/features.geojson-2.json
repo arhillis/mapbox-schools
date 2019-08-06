@@ -1,0 +1,239 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Waggoner Creek Elementary",
+        "phoneNumber": "903-255-3301",
+        "address": {
+          "street": "6335 Gibson Lane",
+          "zipCode": "75501"
+        },
+        "principal": "Angie Griffin"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.126118,
+          33.458351
+        ],
+        "type": "Point"
+      },
+      "id": "3ec91cbd2d5a8493cb6f72dd64bb74e6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Spring Lake Park Elementary",
+        "phoneNumber": "903-794-7525",
+        "address": {
+          "street": "4324 Ghio Fish Boulevard",
+          "zipCode": "75503"
+        },
+        "principal": "Anne Slade"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.053214,
+          33.45927
+        ],
+        "type": "Point"
+      },
+      "id": "4225b61419a6745edef9a6638f649426"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Wake Village Elementary",
+        "phoneNumber": "903-838-4261",
+        "address": {
+          "street": "400 Wildcat Drive",
+          "city": "Wake Village",
+          "zipCode": "75501"
+        },
+        "principal": "Mindy Gennings"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.10989,
+          33.422461
+        ],
+        "type": "Point"
+      },
+      "id": "4e0411648cfd1e4d9a2d00a706da0af8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Morriss Elementary",
+        "phoneNumber": "903-791-2262",
+        "address": {
+          "street": "4826 University Park",
+          "zipCode": "75503"
+        },
+        "principal": "Brandy Debenport"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.110889,
+          33.463568
+        ],
+        "type": "Point"
+      },
+      "id": "4eba03f65fce0b7f3023ea358973b50a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Texas High School",
+        "phoneNumber": "903-794-3891",
+        "address": {
+          "street": "4001 Summerhill Road",
+          "zipCode": "75503"
+        },
+        "principal": "Carla Dupree"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.06783,
+          33.455262
+        ],
+        "type": "Point"
+      },
+      "id": "576004569e3e955c4e72bc2eab6a48b1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Texas Middle School",
+        "phoneNumber": "903-793-5631",
+        "address": {
+          "street": "2100 College Drive",
+          "zipCode": "75503"
+        },
+        "principal": "Tim Lambert"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.067489,
+          33.450474
+        ],
+        "type": "Point"
+      },
+      "id": "5d68f3073f93328612e08ae5f538a55e"
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          -94.085655,
+          33.48332
+        ],
+        "type": "Point"
+      },
+      "id": "703934380d29a4759e589a827cfa48f8"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Dunbar Early Education",
+        "phone": "903-974-8113",
+        "address": {
+          "street": "2315 West 10th Street",
+          "zipCode": "75503"
+        },
+        "principal": "Lakesha Taylor"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.069596,
+          33.426255
+        ],
+        "type": "Point"
+      },
+      "id": "73e56f2355b625e574af99f611991e99"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Theron Jones Elementary",
+        "phoneNumber": "903-793-4871",
+        "address": {
+          "street": "2600 W 15th Street",
+          "zipCode": "75501"
+        },
+        "principal": "Melodie White"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.072376,
+          33.431178
+        ],
+        "type": "Point"
+      },
+      "id": "9cb8e495e1cbfa753cfe49c5af21e113"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Westlawn Elementary",
+        "phoneNumber": "903-23-4252",
+        "address": {
+          "street": "410 Westlawn Drive",
+          "city": "Texarkana",
+          "zipCode": "75503"
+        },
+        "principal": "Taryn Givan"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.085508,
+          33.436686
+        ],
+        "type": "Point"
+      },
+      "id": "b23db3fc8d1b94e81b1460ec473ac764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Nash Elementary",
+        "phoneNumber": "903-828-4321",
+        "address": {
+          "street": "100 Burton",
+          "zipCode": "75569"
+        },
+        "principal": "Patti O'Bannon"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.130758,
+          33.446846
+        ],
+        "type": "Point"
+      },
+      "id": "b29d94d269a02f09ecd81d84ee2e81a1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "campus": "Highland Park Elementary",
+        "phoneNumber": "903-794-8001",
+        "address": {
+          "street": "401 W 25th Street",
+          "zipCode": "75503"
+        },
+        "principal": "Jennifer Cross"
+      },
+      "geometry": {
+        "coordinates": [
+          -94.046499,
+          33.440716
+        ],
+        "type": "Point"
+      },
+      "id": "f73c96216e841114504b374b3c2af8e9"
+    }
+  ],
+  "type": "FeatureCollection"
+}
