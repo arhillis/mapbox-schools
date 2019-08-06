@@ -1,7 +1,14 @@
+body {
+  font-size: 12px;
+  line-height: 1.833;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
 
 /* ************** SIDEBAR ************************ */
 .sidebar{
-  background: darkblue;
+  background: lightgray;
   color: white;
   width: 250px;
   height: 100vh;
@@ -16,7 +23,10 @@
   top: 3px;
   width: 30px;
   height: 30px;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  background: skyblue;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .sidebar.shown{
@@ -44,6 +54,8 @@
   to {left: 0}
 }
 
+/* MAP*/
+.map{ position: absolute; height: 100vh; width: 80vw; display: flex; justify-content: center; align-items: center; left: 10%;}
 /* *********** MARKER LABEL *********************** */
 .marker-label{
   color: darkslateblue;
@@ -56,3 +68,4 @@
   width: 20px;
   height: 20px;
 }
+
