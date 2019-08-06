@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import data from './features.geojson-2.json';
-import ReactMapGL from 'react-map-gl';
+import ReactMapGL, {Marker} from 'react-map-gl';
 
 import Sidebar from './components/sidebar'
 
@@ -13,7 +13,7 @@ class App extends React.Component{
       viewport: {
         width: 1000,
         height: 1000,
-        latitude: 33.44,
+        latitude: 33.42,
         longitude: -94.05,
         zoom: 12
       },
@@ -29,10 +29,9 @@ class App extends React.Component{
   }
 
   render() {
-    console.log(data.features)
+
     return (
       <div className="App">
-        App goes here.
         <Sidebar showSidebar={this.state.showSidebar}
           toggleSidebar={this.toggleSidebar}
         />
@@ -40,7 +39,23 @@ class App extends React.Component{
           mapboxApiAccessToken={this.state.API_KEY}
           {...this.state.viewport}
           onViewportChange={(viewport) => this.setState({viewport})}
-        />
+        >
+          {this.state.schools.map((school, index) =>
+            <Marker key={school.id} 
+            latitude={school.geometry.coordinates[1]}
+            longitude={school.geometry.coordinates[0]}
+            
+            >
+              <img src="/graduation-hat.png" alt="graduation hat" className="marker-icon"/>
+              <span className="marker-label">
+                {school.properties.campus}
+              </span>
+            </Marker>
+          )}
+        </ReactMapGL>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank"
+            rel="noopener noreferrer"
+        >CC 3.0 BY</a></div>
       </div>
     );
   }
