@@ -3,7 +3,7 @@
 .sidebar{
   background: darkblue;
   color: white;
-  width: 300px;
+  width: 250px;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -12,11 +12,11 @@
 
 .sidebar-btn{
   position: absolute;
-  left: 245px;
-  top: 5px;
-  width: 50px;
-  height: 50px;
-  font-size: 1.5em;
+  left: 215px;
+  top: 3px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.25em;
 }
 
 .sidebar.shown{
@@ -27,7 +27,7 @@
   animation-duration: 2s;
 }
 .sidebar.hidden{
-  left: -240px;
+  left: -213px;
   -webkit-animation-name: slide-in; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   animation-name: slide-in;
@@ -36,11 +36,11 @@
 
 @keyframes slide-in{
   from {left: 0}
-  to {left: -240px}
+  to {left: -213px}
 }
 
 @keyframes slide-out{
-  from {left: -240px}
+  from {left: -213px}
   to {left: 0}
 }
 
