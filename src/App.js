@@ -33,7 +33,9 @@ class App extends React.Component{
 
     return (
       <div className="App">
-        <Sidebar showSidebar={this.state.showSidebar}
+        <Sidebar 
+          schools={schools}
+          showSidebar={this.state.showSidebar}
           toggleSidebar={this.toggleSidebar}
         />
         <Map API_KEY={API_KEY}
