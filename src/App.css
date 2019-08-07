@@ -44,6 +44,15 @@ body {
   animation-duration: 2s;
 }
 
+.searchbox{
+  margin: 50px auto auto 15px;
+  width: 190px;
+  height: 25px;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
 @keyframes slide-in{
   from {left: 0}
   to {left: -213px}
