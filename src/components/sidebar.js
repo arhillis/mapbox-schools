@@ -7,11 +7,22 @@ class Sidebar extends Component {
     }
     
     render() {
+        const {showSidebar, schools} = this.props;
+        console.log(schools);
         return (
-            <div className={this.props.showSidebar ? "sidebar shown" : "sidebar hidden"}>
+            <div className={showSidebar ? "sidebar shown" : "sidebar hidden"}>
                 <button className="sidebar-btn"
                         onClick={this.toggleSidebar}
                 >X</button>
+                <input type="text" className="searchbox" list="keywords"/>
+                <datalist id="keywords">
+                    {schools.map(school =>(
+                        <option 
+                            key={school.id}
+                            value={school.properties.campus}
+                        ></option>
+                    ))}
+                </datalist>
             </div>
         );
     }
