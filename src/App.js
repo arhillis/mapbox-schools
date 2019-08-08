@@ -18,6 +18,7 @@ class App extends React.Component{
         zoom: 11.5
       },
       schools: [...data.features],
+      selectedSchool: null,
       API_KEY: 'pk.eyJ1IjoiYW5kcmllbGxlaCIsImEiOiJjanl1cm96bGIwNDkwM21taXhwdzI4YTh1In0.h4LtxhhhtJFzWbBAwSAtrg'
     }
   }
@@ -28,8 +29,14 @@ class App extends React.Component{
     })
   }  
 
+  showSchool = (school) =>{
+    this.setState({selectedSchool: school})
+  }
+
   render() {
-    const {API_KEY, viewport, schools} = this.state;
+    const {API_KEY, viewport, schools, selectedSchool} = this.state;
+
+    console.log(selectedSchool || "Pick a school!")
 
     return (
       <div className="App">
@@ -41,6 +48,8 @@ class App extends React.Component{
         <Map API_KEY={API_KEY}
           viewport={{...viewport}}
           schools={[...schools]}
+          showSchool={this.showSchool}
+          selectedSchool={selectedSchool}
         />
         
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank"
