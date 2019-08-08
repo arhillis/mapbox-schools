@@ -5,6 +5,7 @@ class Map extends Component {
     constructor(props){
         super(props)
         this.state = {...this.props}
+        this.showSchool = props.showSchool.bind(this)
     }
 
     render() {
@@ -24,7 +25,9 @@ class Map extends Component {
                     >
                     <img src="/graduation-hat.png" 
                         alt="graduation hat" 
-                        className="marker-icon"/>
+                        className="marker-icon"
+                        onClick={() => this.showSchool(school)}
+                    />
                     <span className="marker-label">
                         {school.properties.campus}
                     </span>
