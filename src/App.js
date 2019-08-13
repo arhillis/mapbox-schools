@@ -18,9 +18,13 @@ class App extends React.Component{
         zoom: 11.5
       },
       schools: [...data.features],
-      selectedSchool: null,
+      searchValue: "",
       API_KEY: 'pk.eyJ1IjoiYW5kcmllbGxlaCIsImEiOiJjanl1cm96bGIwNDkwM21taXhwdzI4YTh1In0.h4LtxhhhtJFzWbBAwSAtrg'
     }
+  }
+
+  handleChange = (event) => {
+    this.setState({searchValue: event.target.value})
   }
 
   toggleSidebar = () =>{
@@ -29,27 +33,25 @@ class App extends React.Component{
     })
   }  
 
-  showSchool = (school) =>{
-    this.setState({selectedSchool: school})
-  }
-
   render() {
-    const {API_KEY, viewport, schools, selectedSchool} = this.state;
+    const {API_KEY, viewport, schools, searchValue} = this.state;   
 
-    console.log(selectedSchool || "Pick a school!")
+    const regex = new RegExp(searchValue.toLowerCase()) ;
+    const results = searchValue.length === 0 ? schools : schools.filter(school => regex.test(school.properties.campus.toLowerCase()));
 
     return (
       <div className="App">
         <Sidebar 
-          schools={schools}
+          searchResults={results}
           showSidebar={this.state.showSidebar}
           toggleSidebar={this.toggleSidebar}
+          searchValue={searchValue}
+          handleChange={this.handleChange}
         />
         <Map API_KEY={API_KEY}
           viewport={{...viewport}}
-          schools={[...schools]}
+          schools={results}
           showSchool={this.showSchool}
-          selectedSchool={selectedSchool}
         />
         
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"                 title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"                 title="Creative Commons BY 3.0" target="_blank"
