@@ -5,11 +5,12 @@ class Map extends Component {
     constructor(props){
         super(props)
         this.state = {...this.props}
-        this.showSchool = props.showSchool.bind(this)
     }
 
+
     render() {
-        const {API_KEY, viewport, schools} = this.state;
+        const {API_KEY, viewport, schools} = this.props;
+
         return (
             <div className="map">
                 <ReactMapGL
@@ -26,7 +27,6 @@ class Map extends Component {
                     <img src="/graduation-hat.png" 
                         alt="graduation hat" 
                         className="marker-icon"
-                        onClick={() => this.showSchool(school)}
                     />
                     <span className="marker-label">
                         {school.properties.campus}
