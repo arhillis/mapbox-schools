@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SchoolDisplay from './schoolDisplay';
 
 class Sidebar extends Component {
     constructor(props){
@@ -28,7 +29,7 @@ class Sidebar extends Component {
                 />
                 <ul>
                     {searchResults.map(school => 
-                        <p key={school.id}>{school.properties.campus}</p>
+                        <SchoolDisplay school={school} key={school.id}/>
                     )}
                 </ul>        
                 
