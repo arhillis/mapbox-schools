@@ -49,6 +49,14 @@ body {
   animation-duration: 2s;
 }
 
+.disclaimer{
+  padding: 40px 40px 10px 10px;
+}
+
+.disclaimer a{
+  color: aliceblue;
+}
+
 .searchbox{
   margin: 50px auto auto 15px;
   width: 190px;

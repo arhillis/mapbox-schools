@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SchoolSidebarDisplay from './school-sidebar-display';
+import Disclaimer from './discliamer';
 
 class Sidebar extends Component {
     constructor(props){
@@ -17,7 +18,8 @@ class Sidebar extends Component {
         const {showSidebar, searchResults, searchValue} = this.props;
 
         return (
-            <div className={showSidebar ? "sidebar shown" : "sidebar hidden"}>
+            <div className={showSidebar ? "sidebar shown" : "sidebar hidden"}>     
+                <Disclaimer />
                 <button className="sidebar-btn"
                         onClick={this.toggleSidebar}
                 >X</button>
