@@ -29,12 +29,17 @@ body {
   text-align: center;
 }
 
+.shown .sidebar-btn{
+  left: 200px;
+}
+
 .sidebar.shown{
   left: 0;
   -webkit-animation-name: slide-out; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   animation-name: slide-out;
   animation-duration: 2s;
+  overflow-y: scroll;
 }
 .sidebar.hidden{
   left: -213px;
@@ -51,6 +56,12 @@ body {
   border: 2px solid darkslategray;
   border-radius: 5px;
   font-size: 18px;
+}
+
+.school-list{
+  box-sizing: content-box;
+  list-style-type: none;
+  margin-left: -20px;
 }
 
 @keyframes slide-in{
