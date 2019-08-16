@@ -5,11 +5,11 @@ class SchoolSidebarDisplay extends Component {
         const {properties: {campus, address: {street, zipCode}}} = this.props.school;
 
         return (
-            <div>
+            <li>
                 <h3>{campus}</h3>
                 <p>{street}</p>
                 <p>Texarkana, TX {zipCode}</p>
-            </div>
+            </li>
         );
     }
 }
