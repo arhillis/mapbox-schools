@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "044be5b3d4e2c935ef6807e8d206a426",
+    "revision": "4cd6af92d42edcd45216ba5b9eba619b",
     "url": "/mapbox-schools/index.html"
   },
   {
-    "revision": "7c83fb65232eafcf1bef",
-    "url": "/mapbox-schools/static/css/main.a082e016.chunk.css"
+    "revision": "67d46f19ad87150ef6de",
+    "url": "/mapbox-schools/static/css/main.749c5f06.chunk.css"
   },
   {
     "revision": "06baf3074c2e4b04d642",
     "url": "/mapbox-schools/static/js/2.507a2848.chunk.js"
   },
   {
-    "revision": "7c83fb65232eafcf1bef",
-    "url": "/mapbox-schools/static/js/main.9abc0dd5.chunk.js"
+    "revision": "67d46f19ad87150ef6de",
+    "url": "/mapbox-schools/static/js/main.dc0a810a.chunk.js"
   },
   {
     "revision": "088b8df5f80ad9cab7ff",

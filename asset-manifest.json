@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mapbox-schools/static/css/main.a082e016.chunk.css",
-    "main.js": "/mapbox-schools/static/js/main.9abc0dd5.chunk.js",
-    "main.js.map": "/mapbox-schools/static/js/main.9abc0dd5.chunk.js.map",
+    "main.css": "/mapbox-schools/static/css/main.749c5f06.chunk.css",
+    "main.js": "/mapbox-schools/static/js/main.dc0a810a.chunk.js",
+    "main.js.map": "/mapbox-schools/static/js/main.dc0a810a.chunk.js.map",
     "runtime~main.js": "/mapbox-schools/static/js/runtime~main.5c2cde65.js",
     "runtime~main.js.map": "/mapbox-schools/static/js/runtime~main.5c2cde65.js.map",
     "static/js/2.507a2848.chunk.js": "/mapbox-schools/static/js/2.507a2848.chunk.js",
     "static/js/2.507a2848.chunk.js.map": "/mapbox-schools/static/js/2.507a2848.chunk.js.map",
     "index.html": "/mapbox-schools/index.html",
-    "precache-manifest.bad8480306b3b3b0224963e338b28c24.js": "/mapbox-schools/precache-manifest.bad8480306b3b3b0224963e338b28c24.js",
+    "precache-manifest.d792971d67ca738948556d89f9172688.js": "/mapbox-schools/precache-manifest.d792971d67ca738948556d89f9172688.js",
     "service-worker.js": "/mapbox-schools/service-worker.js",
-    "static/css/main.a082e016.chunk.css.map": "/mapbox-schools/static/css/main.a082e016.chunk.css.map"
+    "static/css/main.749c5f06.chunk.css.map": "/mapbox-schools/static/css/main.749c5f06.chunk.css.map"
   }
 }
