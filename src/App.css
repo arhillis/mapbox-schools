@@ -18,8 +18,8 @@ body {
 }
 
 .sidebar-btn{
-  position: absolute;
-  left: 215px;
+  position: fixed;
+  left: 3px;
   top: 3px;
   width: 30px;
   height: 30px;
@@ -27,10 +27,18 @@ body {
   background: skyblue;
   border-radius: 10px;
   text-align: center;
+  -webkit-animation-name: slide-in-btn; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: slide-in-btn;
+  animation-duration: 2s;
 }
 
 .shown .sidebar-btn{
   left: 200px;
+  -webkit-animation-name: slide-out-btn; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: slide-out-btn;
+  animation-duration: 2s;
 }
 
 .sidebar.shown{
@@ -85,6 +93,16 @@ body {
 @keyframes slide-out{
   from {left: -213px}
   to {left: 0}
+}
+
+@keyframes slide-in-btn{
+  from {left: 200px}
+  to {left: 3px}
+}
+
+@keyframes slide-out-btn{
+  from {left: 3px}
+  to {left: 200px}
 }
 
 /* MAP*/
