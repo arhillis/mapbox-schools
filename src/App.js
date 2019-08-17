@@ -11,8 +11,8 @@ class App extends React.Component{
     this.state = {
       showSidebar: false,
       viewport: {
-        width: 700,
-        height: 700,
+        width: "100vw",
+        height: "100vh",
         latitude: 33.43,
         longitude: -94.05,
         zoom: 11.5
