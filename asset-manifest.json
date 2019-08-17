@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mapbox-schools/static/css/main.a082e016.chunk.css",
+    "main.js": "/mapbox-schools/static/js/main.ad5b7bda.chunk.js",
+    "main.js.map": "/mapbox-schools/static/js/main.ad5b7bda.chunk.js.map",
+    "runtime~main.js": "/mapbox-schools/static/js/runtime~main.5c2cde65.js",
+    "runtime~main.js.map": "/mapbox-schools/static/js/runtime~main.5c2cde65.js.map",
+    "static/js/2.507a2848.chunk.js": "/mapbox-schools/static/js/2.507a2848.chunk.js",
+    "static/js/2.507a2848.chunk.js.map": "/mapbox-schools/static/js/2.507a2848.chunk.js.map",
+    "index.html": "/mapbox-schools/index.html",
+    "precache-manifest.5d9df7de91fa70debccbbab6a944ef1c.js": "/mapbox-schools/precache-manifest.5d9df7de91fa70debccbbab6a944ef1c.js",
+    "service-worker.js": "/mapbox-schools/service-worker.js",
+    "static/css/main.a082e016.chunk.css.map": "/mapbox-schools/static/css/main.a082e016.chunk.css.map"
+  }
+}
