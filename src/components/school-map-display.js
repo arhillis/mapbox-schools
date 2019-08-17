@@ -10,7 +10,7 @@ class SchoolMapDisplay extends Component {
                 latitude={school.geometry.coordinates[1]}
                 longitude={school.geometry.coordinates[0]}                    
             >
-                    <img src="/graduation-hat.png" 
+                    <img src="https://raw.githubusercontent.com/arhillis/mapbox-schools/master/public/graduation-hat.png" 
                         alt="graduation hat" 
                         className="marker-icon"
                     />
